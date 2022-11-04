@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4A614EE5-5252-4E29-A5D7-B0E9644D11E0}</ProjectGuid>
+    <ProjectGuid>{6611AFA0-0580-4B1E-8C30-326B7049D3BD}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Kontroller</RootNamespace>
-    <AssemblyName>Kontroller</AssemblyName>
+    <RootNamespace>HelloWorld2_WinF</RootNamespace>
+    <AssemblyName>HelloWorld2_WinF</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,80 +46,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAna.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAna.Designer.cs">
-      <DependentUpon>frmAna.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCheckbox.cs">
+    <Compile Include="frmMessage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCheckbox.Designer.cs">
-      <DependentUpon>frmCheckbox.cs</DependentUpon>
+    <Compile Include="frmMessage.Designer.cs">
+      <DependentUpon>frmMessage.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCheckedListBox.cs">
+    <Compile Include="frmYeniForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCheckedListBox.Designer.cs">
-      <DependentUpon>frmCheckedListBox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmCombobox.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCombobox.Designer.cs">
-      <DependentUpon>frmCombobox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmOthers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmOthers.Designer.cs">
-      <DependentUpon>frmOthers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmPictureBox.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPictureBox.Designer.cs">
-      <DependentUpon>frmPictureBox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmRadioButton.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmRadioButton.Designer.cs">
-      <DependentUpon>frmRadioButton.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmSlideshow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSlideshow.Designer.cs">
-      <DependentUpon>frmSlideshow.cs</DependentUpon>
+    <Compile Include="frmYeniForm.Designer.cs">
+      <DependentUpon>frmYeniForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmAna.resx">
-      <DependentUpon>frmAna.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCheckbox.resx">
-      <DependentUpon>frmCheckbox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCheckedListBox.resx">
-      <DependentUpon>frmCheckedListBox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCombobox.resx">
-      <DependentUpon>frmCombobox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmOthers.resx">
-      <DependentUpon>frmOthers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPictureBox.resx">
-      <DependentUpon>frmPictureBox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRadioButton.resx">
-      <DependentUpon>frmRadioButton.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSlideshow.resx">
-      <DependentUpon>frmSlideshow.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

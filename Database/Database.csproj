@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4A614EE5-5252-4E29-A5D7-B0E9644D11E0}</ProjectGuid>
+    <ProjectGuid>{8872B5F0-3894-48AE-917D-940844D93845}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Kontroller</RootNamespace>
-    <AssemblyName>Kontroller</AssemblyName>
+    <RootNamespace>Database</RootNamespace>
+    <AssemblyName>Database</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,79 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAna.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAna.Designer.cs">
-      <DependentUpon>frmAna.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmCheckbox.cs">
-      <SubType>Form</SubType>
+    <Compile Include="NorthwindDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="frmCheckbox.Designer.cs">
-      <DependentUpon>frmCheckbox.cs</DependentUpon>
+    <Compile Include="NorthwindDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorthwindDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="frmCheckedListBox.cs">
-      <SubType>Form</SubType>
+    <Compile Include="NorthwindDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorthwindDataSet2.xsd</DependentUpon>
     </Compile>
-    <Compile Include="frmCheckedListBox.Designer.cs">
-      <DependentUpon>frmCheckedListBox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmCombobox.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCombobox.Designer.cs">
-      <DependentUpon>frmCombobox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmOthers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmOthers.Designer.cs">
-      <DependentUpon>frmOthers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmPictureBox.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPictureBox.Designer.cs">
-      <DependentUpon>frmPictureBox.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmRadioButton.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmRadioButton.Designer.cs">
-      <DependentUpon>frmRadioButton.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmSlideshow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmSlideshow.Designer.cs">
-      <DependentUpon>frmSlideshow.cs</DependentUpon>
+    <Compile Include="NorthwindDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NorthwindDataSet3.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmAna.resx">
-      <DependentUpon>frmAna.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCheckbox.resx">
-      <DependentUpon>frmCheckbox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCheckedListBox.resx">
-      <DependentUpon>frmCheckedListBox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCombobox.resx">
-      <DependentUpon>frmCombobox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmOthers.resx">
-      <DependentUpon>frmOthers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPictureBox.resx">
-      <DependentUpon>frmPictureBox.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmRadioButton.resx">
-      <DependentUpon>frmRadioButton.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSlideshow.resx">
-      <DependentUpon>frmSlideshow.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -129,6 +86,50 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="NorthwindDataSet.xsc">
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NorthwindDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NorthwindDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NorthwindDataSet.xss">
+      <DependentUpon>NorthwindDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="NorthwindDataSet1.xsc">
+      <DependentUpon>NorthwindDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="NorthwindDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NorthwindDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NorthwindDataSet1.xss">
+      <DependentUpon>NorthwindDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="NorthwindDataSet2.xsc">
+      <DependentUpon>NorthwindDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="NorthwindDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NorthwindDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NorthwindDataSet2.xss">
+      <DependentUpon>NorthwindDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="NorthwindDataSet3.xsc">
+      <DependentUpon>NorthwindDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="NorthwindDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>NorthwindDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="NorthwindDataSet3.xss">
+      <DependentUpon>NorthwindDataSet3.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Kontroller
+namespace Tores.v2
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Kontroller
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmAna());
+            Application.Run(new frmLogin()); // İlk gelecek ekran
         }
     }
 }
